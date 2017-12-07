@@ -29,6 +29,8 @@ Start docker image:
 Bind notebooks to environment:
 > docker run -d -p 8888:8888 --name docker-ee-datascience-notebook -v "C:/geohackweek/ee_docker/work:/home/jovyan/work" -v "C:/geohackweek/ee_docker/.config/earthengine:/home/jovyan/.config/earthengine" geohackweek2016/docker-ee-datascience-notebook
 
+Restart docker:
+>"C:/geohackweek/ee_docker/work> docker restart docker-ee-datascience-notebook
 
 *To-Do*<br>
 Use docker container with additional libraries for visualization of geospatial data in Jupyter Notebooks.
