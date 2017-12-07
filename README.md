@@ -32,6 +32,9 @@ Bind notebooks to environment:
 Restart docker:
 >"C:/geohackweek/ee_docker/work> docker restart docker-ee-datascience-notebook
 
+Launch Jupyter notebook:
+>C:/geohackweek/ee_docker/work> jupyter notebook
+
 *To-Do*<br>
 Use docker container with additional libraries for visualization of geospatial data in Jupyter Notebooks.
 - IPyLeaflet, GeoPandas, Folium (wrapper on Leaflet)
