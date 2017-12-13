@@ -41,7 +41,7 @@ Launch Jupyter notebook:
 > **A)** C:/geohackweek/ee_docker/work>
 docker run geohackweek2016/docker-ee-datascience-notebook
 
-> **B)** C:/geohackweek/ee_docker/work> jupyter notebook
+> **B)** --C:/geohackweek/ee_docker/work> jupyter notebook--
 
 *To-Do*<br>
 Use docker container with additional libraries for visualization of geospatial data in Jupyter Notebooks.
