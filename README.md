@@ -1,6 +1,6 @@
 # geohackery
 
-This repository consists of many Jupyter Notebook snippets from [Geohackweek 2016](http://geohackweek.github.io/) and [Earth Engine User Summit 2017](https://events.withgoogle.com/google-earth-engine-user-summit-2017/).
+This repository consists of Jupyter Notebook snippets from [Geohackweek 2016](http://geohackweek.github.io/) and [Earth Engine User Summit 2017](https://events.withgoogle.com/google-earth-engine-user-summit-2017/).
 
 For using the Earth Engine Python API, the best option currently includes using docker to control the development environment.
 
@@ -15,37 +15,37 @@ For using the Earth Engine Python API, the best option currently includes using 
 2. Open Windows PowerShell as Administrator <br>
 
 Pull docker images:
-> docker pull geohackweek2016/docker-ee-datascience-notebook
+> `docker pull tylere/docker-ee-datascience-notebook`
 
 Show all docker containers:
-> docker ps -a
+> `docker ps -a`
 
 Start docker container:
-> docker start [container_alias]
+> `docker start [container_alias]`
 
 Stop docker container:
-> docker stop [container_alias]
+> `docker stop [container_alias]`
 
 Restart docker container:
-> docker container restart [container_alias]
+> `docker container restart [container_alias]`
 
 Bind notebooks to environment:
-> docker run -d -p 8888:8888 --name docker-ee-datascience-notebook -v "C:/geohackweek/ee_docker/work:/home/jovyan/work" -v "C:/geohackweek/ee_docker/.config/earthengine:/home/jovyan/.config/earthengine" geohackweek2016/docker-ee-datascience-notebook
+> `docker run -d -p 8888:8888 --name docker-ee-datascience-notebook -v "C:/geohackweek/ee_docker/work:/home/jovyan/work" -v "C:/geohackweek/ee_docker/.config/earthengine:/home/jovyan/.config/earthengine" tylere/docker-ee-datascience-notebook`
 
 Restart docker:
->"C:/geohackweek/ee_docker/work> docker restart docker-ee-datascience-notebook
+>`"C:/geohackweek/ee_docker/work> docker restart docker-ee-datascience-notebook`
 
 Launch Jupyter notebook:
 
-2 METHODS ):
-> **A)** C:/geohackweek/ee_docker/work>
-docker run geohackweek2016/docker-ee-datascience-notebook
+> `C:/geohackweek/ee_docker/work>
+docker run geohackweek2016/docker-ee-datascience-notebook`
 
-> **B)** --C:/geohackweek/ee_docker/work> jupyter notebook--
+There may be a way to use: `jupyter notebook` to launch directory of notebooks
 
 *To-Do*<br>
 Use docker container with additional libraries for visualization of geospatial data in Jupyter Notebooks.
 - IPyLeaflet, GeoPandas, Folium (wrapper on Leaflet)
+- integrate Jupyter Lab
 
 Here are a few interesting libraries which could be the start of interactive mapping using the Earth Engine Python API
 1. [IPyLeaflet](https://github.com/ellisonbg/ipyleaflet)
