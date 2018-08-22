@@ -11,7 +11,7 @@ For using the Earth Engine Python API, the best option currently includes using 
 
 #### Instructions
 
-1. Download **Docker for Windows**
+1. Download [**Docker for Windows**](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
 2. Open Windows PowerShell as Administrator <br>
 
 Pull docker images:
