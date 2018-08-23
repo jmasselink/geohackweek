@@ -13,8 +13,8 @@ For using the Earth Engine Python API, the best option currently includes using 
 
 1. Download Docker
 > if you have Windows Professional Enterprise, choose [**Docker for Windows**](https://store.docker.com/editions/community/docker-ce-desktop-windows).<br>
-> if you have Windows Home, choose [**Docker Toolbox**](https://download.docker.com/win/stable/DockerToolbox.exe).
-
+> if you have Windows Home, choose [**Docker Toolbox**](https://docs.docker.com/toolbox/overview/).
+>>You may need to enable virtualization, which is disabled by default. Follow the [instructions here](https://www.laptopmag.com/articles/access-bios-windows-10) to enable virtualization through BIOS.
 2. Open Windows PowerShell as Administrator
 
   Pull docker images:
