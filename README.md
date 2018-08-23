@@ -11,32 +11,34 @@ For using the Earth Engine Python API, the best option currently includes using 
 
 #### Instructions
 
-1. Download [**Docker for Windows**](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
-2. Open Windows PowerShell as Administrator <br>
+1. Download Docker
+> if you have Windows Professional Enterprise, choose [**Docker for Windows**](https://store.docker.com/editions/community/docker-ce-desktop-windows).<br>
+> if you have Windows Home, choose [**Docker Toolbox**](https://download.docker.com/win/stable/DockerToolbox.exe).
 
-Pull docker images:
+2. Open Windows PowerShell as Administrator
+
+  Pull docker images:
 > `docker pull tylere/docker-ee-datascience-notebook`
 
-Show all docker containers:
+  Show all docker containers:
 > `docker ps -a`
 
-Start docker container:
+  Start docker container:
 > `docker start [container_alias]`
 
-Stop docker container:
+  Stop docker container:
 > `docker stop [container_alias]`
 
-Restart docker container:
+  Restart docker container:
 > `docker container restart [container_alias]`
 
-Bind notebooks to environment:
+  Bind notebooks to environment:
 > `docker run -d -p 8888:8888 --name docker-ee-datascience-notebook -v "C:/geohackweek/ee_docker/work:/home/jovyan/work" -v "C:/geohackweek/ee_docker/.config/earthengine:/home/jovyan/.config/earthengine" tylere/docker-ee-datascience-notebook`
 
-Restart docker:
+  Restart docker:
 >`"C:/geohackweek/ee_docker/work> docker restart docker-ee-datascience-notebook`
 
-Launch Jupyter notebook:
-
+  Launch Jupyter notebook:
 > `C:/geohackweek/ee_docker/work>
 docker run geohackweek2016/docker-ee-datascience-notebook`
 
